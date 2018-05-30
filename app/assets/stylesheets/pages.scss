@@ -1,0 +1,50 @@
+
+.top-hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.top-card-content{
+  width: 80vw;
+  height: 80vh;
+  margin: 60px 0 0 10px;
+  background: rgba(248,182,22,0.7);
+  position: relative;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+.top-title{
+  font-size: 50px;
+  padding: 75px 0 0 10px;
+  color: #ebebeb;
+}
+
+.top-text{
+  padding: 60px 0 0 15px;
+  color: #ebebeb;
+}
+
+.btn-whits{
+  width: 250px;
+  position: absolute;
+  bottom: 80px;
+  left: 350px;
+}
+.contents-area{
+  width: 65vw;
+  height: 80vh;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.top-icon{
+  width: 20vw;
+  height: auto;
+  padding: 15px 0 0 20px;
+  margin-left: 10px;
+  float: left;
+}

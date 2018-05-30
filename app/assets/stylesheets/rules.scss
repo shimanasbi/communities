@@ -1,0 +1,40 @@
+.rules-list{
+  width: 75vw;
+  height: auto;
+  margin-top: 2px;
+  position: absolute;
+  right: 0;
+}
+
+.mini-rule-list{
+  float: left;
+}
+.mini-rule-list:not( :first-child ) {
+  margin-left: 30px;
+}
+
+ul{
+  padding-top: 5px;
+}
+
+li{
+  font-size: 13px;
+  color: rgba(253,230,198,1);
+  margin-top: 8px;
+}
+
+.big-rule-title{
+  font-size: 22px;
+}
+
+.text-green{
+  color: rgba(119,194,185,1);
+}
+
+.text-blue{
+  color: rgba(130,154,201,1);
+}
+
+.text-pink{
+  color: rgba(130,101,159,1);
+}

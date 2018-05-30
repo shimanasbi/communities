@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Communities</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="nav navbar-default navbar-fixed-top navbar-transparent">
+        <div class="container">
+          <%= link_to root_path do %>
+            <span><%= image_tag 'icons/logo.png', class: 'navbar-brand' %></span>
+          <% end %>
+        </div>
+    </nav>
+
+    <div class = "left-contents">
+      <div class = "title-text-area">
+        <%= link_to root_path do %>
+          <h3 class = "title">Communities</h3>
+        <% end %>
+      <Hr align = "left" width = "180">
+        <div class = "other-contents-title">
+          <%= link_to cleanups_new_path do %>
+            <h4>Cleanup</h4>
+          <% end %>
+          <%= link_to messages_path do %>
+            <h4>Message</h4>
+          <% end %>
+          <%= link_to rules_index_path do %>
+            <h4>Rules</h4>
+          <% end %>
+          <%= link_to troubles_new_path do %>
+            <h4>Trouble</h4>
+          <% end %>
+          <a href = "https://start.kaetsu.ac.jp" target = "_blank">
+            <h4>Start.K</h4>
+          </a>
+          <a href = "https://gakunavi.kaetsu.ac.jp/up/faces/login/Com00501A.jsp" target = "_blank">
+            <h4>GAKUNABI</h4>
+          </a>
+          <a href = "https://mail.google.com/" target = "_blank">
+            <h4>Gmail</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <% if flash[:notice] %>
+      <div class = "alert alert-success">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <% if flash[:notice] %>
+      <div class = "alert alert-danger">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

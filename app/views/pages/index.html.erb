@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Communities</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="top-hero-wrapper">
+    <div class="container top-hero-container">
+      <div class="row">
+          <div class = "top-card-content">
+            <h1 class = "top-title">Communities</h1>
+            <p class = "top-text">
+              快適な寮生活を送りませんか？<br>
+              このCommunitiesは、寮生活に必要な機能が揃ったサイトです。<br>
+              ぜひ活用して、楽しい大学生活を謳歌してください！
+            </p>
+            <%= link_to 'ログインページへ', '/login',class: 'btn btn-white' %>
+          </div>
+      </div>
+    </div>
+  </div>
+  <%= yield %>
+</body>
+</html>

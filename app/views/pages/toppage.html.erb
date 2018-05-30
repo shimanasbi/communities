@@ -1,0 +1,32 @@
+<div class = "container">
+  <div class = "right-contents">
+    <div class = "contents-area">
+      <h3 class = "text-center">サービス一覧</h3>
+      <h4 class = "text-center">Communitiesの機能を紹介しています。</h4>
+      <%= link_to cleanups_new_path do %>
+          <span>
+            <%= image_tag 'icons/cleanup.png', class: 'top-icon' %>
+          </span>
+      <% end %>
+      <%= link_to messages_path do %>
+        <span>
+          <%= image_tag 'icons/Message.png', class: 'top-icon' %>
+        </span>
+      <% end %>
+      <%= link_to rules_index_path do %>
+        <span>
+          <%= image_tag 'icons/Rules.png', class: 'top-icon' %>
+        </span>
+      <% end %>
+      <a href = "https://mail.google.com/mail" target="_blank">
+        <%= image_tag 'icons/Gmail.png', class: 'top-icon' %>
+      </a>
+      <%= link_to troubles_new_path do %>
+        <%= image_tag 'icons/Trouble.png', class: 'top-icon' %>
+      <% end %>
+      <a href = "https://start.kaetsu.ac.jp" target="_blank">
+        <%= image_tag 'icons/StartK.png', class: 'top-icon' %>
+      </a>
+    </div>
+  </div>
+</div>

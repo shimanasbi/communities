@@ -1,0 +1,29 @@
+<div class="right-contents">
+  <div class="container">
+    <div class="row">
+      <div class = "page-title-area">
+        <h1 class = "text-grey">Read Message</h1>
+        <p class = "text-grey">送信されたメッセージを閲覧します。</p>
+        <p class = "new-message-path text-pink">
+          <%= link_to 'メッセージ作成はこちらから',new_message_path %>
+        </p>
+        <Hr align = "left" width = "800">
+      </div>
+      <% @messages.reverse_each do |message| %>
+        <div class="col-md-8">
+          <div class="message-index-single">
+            <h4 class="message-author">
+              <p>From：<%= message.user.name %></p>
+            </h4>
+            <h4 class = "message-user">
+              <p>Title：<%= message.message_title %></p>
+            </h4>
+            <p class="message-text">
+              <%= message.description %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
